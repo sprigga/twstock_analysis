@@ -3,12 +3,12 @@
 ## 簡介
 台灣股票趨勢與購買建議分析系統，使用 FastMCP 套件實作 Model Context Protocol (MCP) Server。此專案提供多種工具，用於分析台灣股票的趨勢、技術指標、支撐與阻力位，以及購買建議。
 
-![台灣股票分析系統截圖](twstock_mcp_screenshot.png)
+![台灣股票分析系統截圖](media/twstock_mcp_screenshot.png)
 
 ## 功能展示
 觀看示範影片了解系統功能：
 
-https://github.com/yourusername/taiwan-stock-analysis/assets/videos/twstock_mcp_video.mov
+[![示範影片](media/twstock_mcp_screenshot.png)](media/twstock_mcp_video.mov)
 
 ## 功能
 - **股票基本資訊查詢**：獲取股票代碼、名稱、產業分類等基本資訊。
@@ -49,7 +49,7 @@ python twstock_mcp.py
 ```
 
 系統啟動畫面如下：
-![MCP Server 啟動畫面](twstock_mcp_screenshot.png)
+![MCP Server 啟動畫面](media/twstock_mcp_screenshot.png)
 
 ### API 功能說明
 1. **單支股票分析**
@@ -91,6 +91,9 @@ taiwan-stock-analysis/
 ├── twstock_mcp.py      # 主程式
 ├── requirements.txt    # 相依套件清單
 ├── README.md          # 說明文件
+└── media/             # 圖片與影片
+    ├── twstock_mcp_screenshot.png
+    ├── twstock_mcp_video.mov
 └── tests/             # 測試程式碼
 ```
 
@@ -108,7 +111,7 @@ taiwan-stock-analysis/
 
 ## 開發環境截圖
 下圖展示了使用 Visual Studio Code 進行開發時的介面：
-![開發環境截圖](twstock_mcp_screenshot.png)
+![開發環境截圖](media/twstock_mcp_screenshot.png)
 
 ## 常見問題
 1. Q: 為什麼無法取得股票資料？
