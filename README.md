@@ -1,7 +1,7 @@
-# Taiwan Stock Analysis MCP Server
+# Using the LLM to analyze Taiwan Stocks with the MCP Server
 
 ## 簡介
-台灣股票趨勢與購買建議分析系統，使用 FastMCP 套件實作 Model Context Protocol (MCP) Server。此專案提供多種工具，用於分析台灣股票的趨勢、技術指標、支撐與阻力位，以及購買建議。
+台灣股票趨勢與購買建議分析系統，使用 FastMCP 套件實作 Model Context Protocol (MCP) Server，並結合大型語言模型 (LLM) 提供更智能的分析能力。此系統能根據股票的技術指標、趨勢判斷、支撐與阻力位，生成購買建議，並支持多支股票的批量分析。
 
 ![台灣股票分析系統截圖](media/twstock_mcp_screenshot.png)
 
@@ -9,6 +9,12 @@
 觀看示範影片了解系統功能：
 
 [![示範影片]](media/twstock_mcp_video.mp4)
+
+## 核心概念
+此系統透過 MCP Server 與 LLM 的結合，實現以下功能：
+- MCP Server 作為中介，提供股票分析工具的接口。
+- LLM 負責解讀使用者的自然語言指令，並調用 MCP Server 的工具進行分析。
+- 分析結果以結構化格式返回，供使用者進一步操作或決策。
 
 ## 功能
 - **股票基本資訊查詢**：獲取股票代碼、名稱、產業分類等基本資訊。
