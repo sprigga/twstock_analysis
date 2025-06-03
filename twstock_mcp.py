@@ -547,7 +547,4 @@ def main():
     mcp.run(transport='stdio')
 
 if __name__ == "__main__":
-    # asyncio.run(main())
-    #  mcp.run(transport='stdio')
     main()
-    # mcp.run(transport='stdio')
