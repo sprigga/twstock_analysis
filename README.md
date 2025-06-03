@@ -109,10 +109,6 @@ taiwan-stock-analysis/
 2. 使用 @mcp.tool() 裝飾器註冊新工具
 3. 在主程式中新增相應的處理邏輯
 
-## 開發環境截圖
-下圖展示了使用 Visual Studio Code 進行開發時的介面：
-![開發環境截圖](media/twstock_mcp_screenshot.png)
-
 ## 常見問題
 1. Q: 為什麼無法取得股票資料？
    A: 請確認網路連線正常，且 twstock 套件設定正確。
