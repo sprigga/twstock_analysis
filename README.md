@@ -8,7 +8,10 @@
 ## 功能展示
 觀看示範影片了解系統功能：
 
-[![示範影片]](media/twstock_mcp_video.mov)
+<video width="640" height="360" controls>
+  <source src="media/twstock_mcp_video.mov" type="video/mp4">
+  您的瀏覽器不支援影片播放。
+</video>
 
 ## 功能
 - **股票基本資訊查詢**：獲取股票代碼、名稱、產業分類等基本資訊。
