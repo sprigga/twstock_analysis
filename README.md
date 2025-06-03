@@ -8,7 +8,7 @@
 ## 功能展示
 觀看示範影片了解系統功能：
 
-[![示範影片](media/twstock_mcp_screenshot.png)](media/twstock_mcp_video.mov)
+[![示範影片]](media/twstock_mcp_video.mov)
 
 ## 功能
 - **股票基本資訊查詢**：獲取股票代碼、名稱、產業分類等基本資訊。
@@ -47,9 +47,6 @@ pip install -r requirements.txt
 ```bash
 python twstock_mcp.py
 ```
-
-系統啟動畫面如下：
-![MCP Server 啟動畫面](media/twstock_mcp_screenshot.png)
 
 ### API 功能說明
 1. **單支股票分析**
