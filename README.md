@@ -21,6 +21,7 @@
 ## 系統需求
 - Python 3.10+
 - 相依套件 (見 requirements.txt)
+- 使用 `uv` 管理開發環境
 
 ## 安裝步驟
 1. 複製專案
@@ -29,23 +30,42 @@ git clone https://github.com/yourusername/taiwan-stock-analysis.git
 cd taiwan-stock-analysis
 ```
 
-2. 建立虛擬環境 (建議)
-```bash
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# 或
-.\venv\Scripts\activate  # Windows
-```
-
-3. 安裝相依套件
-```bash
-pip install -r requirements.txt
-```
+2. 使用 `uv` 管理開發環境
+   - 安裝 `uv`：
+     ```bash
+     pip install uv
+     ```
+   - 初始化開發環境：
+     ```bash
+     uv init
+     ```
+   - 安裝相依套件：
+     ```bash
+     uv sync
+     ```
 
 ## 使用說明
 ### 啟動 MCP Server
+使用 `uv` 啟動 MCP Server：
 ```bash
-python twstock_mcp.py
+uv run twstock_mcp.py
+```
+
+### 在 Cline Host 設置 MCP Server
+若使用 Cline Host，請在設定檔中新增以下內容：
+```json
+"taiwan-stock-analysis": {
+  "disabled": false,
+  "timeout": 60,
+  "command": "uv",
+  "args": [
+    "--directory",
+    "/Users/pololin/twstock_analysis",
+    "run",
+    "twstock_mcp.py"
+  ],
+  "transportType": "stdio"
+}
 ```
 
 ### API 功能說明
