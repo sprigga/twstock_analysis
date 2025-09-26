@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "twstock-analysis": {
+      "type": "stdio",
+      "command": "/home/ubuntu/twstock_analysis/.venv/bin/python",
+      "args": [
+        "/home/ubuntu/twstock_analysis/twstock_mcp.py"
+      ],
+      "env": {}
+    }
+  }
+}

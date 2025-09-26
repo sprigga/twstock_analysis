@@ -6,5 +6,11 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "httpx>=0.28.1",
+    "lxml>=6.0.2",
+    "matplotlib>=3.10.6",
     "mcp[cli]>=1.9.2",
+    "mplfinance>=0.12.10b0",
+    "pandas>=2.3.2",
+    "ta>=0.11.0",
+    "twstock>=1.4.0",
 ]
