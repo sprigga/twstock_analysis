@@ -9,3 +9,9 @@ wheels/
 # Virtual environments
 .venv
 main.py
+
+# Test and coverage files
+debug.*
+get_hohai.*
+test_*.py
+coverage.xml
